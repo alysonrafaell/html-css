@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iframe estudando</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to left, rgba(71, 71, 71, 0.952), black);
+      background-attachment: fixed;
+
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+    h1 {
+      text-align: center;
+      margin: 50px;
+      background: linear-gradient(
+        to left,
+        rgba(69, 104, 98, 0.582),
+        transparent
+      );
+      font-size: 50px;
+      color: rgb(5, 5, 5);
+    }
+    .os p {
+      text-align: left;
+      color: rgb(14, 131, 74);
+      padding: 20px;
+      font-size: larger;
+      text-indent: 25px;
+    }
+    .sim p {
+      text-align: left;
+      color: rgb(14, 131, 74);
+      font-size: 27px;
+      text-indent: 10px;
+      text-align: center;
+      font-weight: bolder;
+    }
+    div {
+      display: block;
+      text-align: center;
+    }
+    iframe {
+      width: 500px;
+      height: 300px;
+    }
+  </style>
+  <body>
+    <header class="os">
+      <h1>Estudando o IFRAME</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quos quia
+        minus unde amet vitae sed delectus soluta in rerum iure ratione
+        aspernatur molestias voluptatibus ipsam nisi quibusdam blanditiis
+        debitis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis
+        quisquam, cum impedit error, sit sunt quaerat possimus vero officia
+        voluptatibus nam porro molestias iste in iusto illum. Voluptatem,
+        dolorum perferendis? Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Totam soluta sunt, illum voluptatibus unde magnam quaerat
+        obcaecati hic ipsam quas in? Eius, dicta. Deleniti, rerum. Modi omnis
+        dignissimos quas necessitatibus!
+      </p>
+    </header>
+    <main>
+      <section class="sim">
+        <p>aqui eu vou ter uma imagem, ou site para ver no iframe:</p>
+        <div>
+          <p> esse é o site do guanabara no github
+          <iframe
+            src="https://gustavoguanabara.github.io"
+            frameborder="0"
+          ></iframe></p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
