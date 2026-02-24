@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="favicon.io" />
+    <title>Facebook</title>
+</head>
+<style>
+    body {
+    background-image: url(imagens/fundo-madeira.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative; /* 👈 agora o body é a referência */
+}
+.container {
+  position: relative;
+  width: 22vw;
+  max-width: 310px;
+  min-width: 220px;
+
+  /* 👇 mantém proporção do iPhone */
+  aspect-ratio: 310 / 640;
+}
+
+/* celular */
+.celular {
+  width: 22vw;
+  max-width: 310px;
+  min-width: 220px;
+  display: block;
+  
+}
+
+.tela-inicial {
+  position: absolute;
+ overflow: scroll;
+  width: 19vw;
+  max-width: 270px;
+  min-width: 190px;
+
+  height: 73.7%;
+  top: 12.2%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 3px;
+}
+
+/* imagem interna */
+.tela-inicial img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+ 
+}
+ .coluna{
+      display: flex;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      gap: 10px;
+      transform: translateY(-50%);
+      flex-direction: column;      
+    }
+    .coluna img {
+      width: 45px;
+      cursor: pointer;
+      transition: transform 0.2s;
+      border-radius: 15px;
+  }
+
+.coluna img:hover {
+  transform: scale(1.1);
+}
+</style>
+<body>
+    <div class="container">
+        
+        <!-- Imagem de fundo -->
+        <img src="imagens/frame-iphone.png" class="celular" id="todo">
+        
+        <!-- Imagem superior (sobreposta) -->
+        <div class="tela-inicial">
+        
+                <img src="imagens/tela-instagram.jpg" >
+        </div>
+    </div>
+    
+<div class="coluna">
+  
+      <a href="face.html"><img src="imagens/logo-facebook.jpg"></a>
+
+      <a href="git.html"><img src="imagens/logo-github.jpg"></a>
+
+      <a href="index.html"><img src="imagens/logo-home.jpg"></a>
+
+      <a href="insta.html"><img src="imagens/logo-instagram.jpg"></a>
+
+      <a href="tt.html"><img src="imagens/logo-twitter.jpg"></a>
+
+      <a href="yout.html"><img src="imagens/logo-youtube.jpg"></a>
+
+    
+      
+  
+</div>
+    
+</body>
+</html>
